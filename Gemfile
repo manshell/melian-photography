@@ -10,6 +10,11 @@ gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'jquery-easing-rails'
 
+gem 'hirb'
+gem 'better_errors'
+gem 'devise'
+gem 'carrierwave'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use sqlite3 as the database for Active Record
