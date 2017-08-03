@@ -16,3 +16,13 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+// Offset for Main Navigation
+$('#mainNav').affix({
+    offset: {
+        top: 100
+    }
+});
+
+});

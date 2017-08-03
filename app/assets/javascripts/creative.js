@@ -5,8 +5,8 @@
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
+            scrollTop: ($($anchor.attr('href')).offset().top + 0)
+        }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 
@@ -31,12 +31,7 @@
         $('.navbar-toggle:visible').click();
     });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    });
+
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
