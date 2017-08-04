@@ -1,4 +1,12 @@
+create scaffold for photos with title:string and description:text
+  test if the post are working
+create scaffold for category with name:string
+  create a category, mountain, beach, flowers, etc.
+install and do the paperclip. AddImageToPhotos image:string, or upload with paperclip? will have to check.
+
 -Create Devise for users db = follow ecommerce tutorial
 -CanCanCan for admin
--portfolio table for photos, description and title.
--comments for photos and registration for other users to be able to comment.
+
+make home photos clickable to go to category, instagram, portfolio etc.
+
+-I will have to create later a separate page for portfolio and about for now. 
