@@ -9,4 +9,7 @@ install and do the paperclip. AddImageToPhotos image:string, or upload with pape
 
 make home photos clickable to go to category, instagram, portfolio etc.
 
--I will have to create later a separate page for portfolio and about for now. 
+-I will have to create later a separate page for portfolio and about for now.
+
+
+git push, 8/6/2017, 10:44 = updated the table to upload photos with paperclip. Worked with the portfolioo page to display the uploaded images on it.

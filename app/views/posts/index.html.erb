@@ -32,6 +32,41 @@
   </tbody>
 </table>
 
+
+<section class="no-padding" id="portfolio">
+
+    <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+            <% @posts.each do |post| %>
+            <div class="col-lg-4 col-sm-6 portfolio-img">
+
+                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                    <!-- <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt=""> -->
+                    <%= image_tag post.image.url, class: "img-responsive" %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                <%= post.name %>
+                            </div>
+                            <div class="project-name">
+                                <%= post.description %>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <% end %>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
 <br>
 
 <%= link_to 'New Post', new_post_path %>
