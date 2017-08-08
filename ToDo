@@ -1,15 +1,28 @@
-create scaffold for photos with title:string and description:text
-  test if the post are working
-create scaffold for category with name:string
-  create a category, mountain, beach, flowers, etc.
-install and do the paperclip. AddImageToPhotos image:string, or upload with paperclip? will have to check.
+**DONE** = create scaffold for photos with title:string and description:text
+  **DONE** = test if the post are working
+**DONE** = create scaffold for category with name:string
+**DONE** = create a category, mountain, beach, flowers, etc.
+**DONE** = install and do the paperclip. AddImageToPhotos image:string, or upload with paperclip? will have to check.
 
 -Create Devise for users db = follow ecommerce tutorial
 -CanCanCan for admin
 
 make home photos clickable to go to category, instagram, portfolio etc.
+  *** Will do the icons for now.
 
 -I will have to create later a separate page for portfolio and about for now.
+  *** The portfolio is created, working on it. Need to create other pages.
+
+-Need to change NEW POST link to be able only with admin rights(DEVISE)
+
+-Need to finish the front portfolio to go to portfolio_path(index of posts)
 
 
-git push, 8/6/2017, 10:44 = updated the table to upload photos with paperclip. Worked with the portfolioo page to display the uploaded images on it.
+update, 8/6/2017, 10:44 = 	-Updated the table to upload photos with paperclip. 
+							-Worked with the portfolioo page to display the uploaded images on it.
+
+update, 8/7/2017, 10:08 = 	-Set navbar with aside for non home page path. 
+							-Did a link in navbar for new post. 
+							-When you click images in the portfolio page it will get you to the show_path of that image, from there you will be able to edit.
+							-Maked the third image in the portfolio of front page to go to portfolio_path(index of posts)
+							-_navbar have an if to separate the home navbar of the other pages navbar. 

@@ -7,6 +7,9 @@
 </head>
 <body id="page-top">
 
+
+    
+
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -24,7 +27,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus erat metus, non cursus neque dapibus ac. Donec pretium congue odio, et condimentum tortor tempor at.</p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
@@ -110,7 +113,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                    <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
+                    <%= link_to(portfolio_path, class: "portfolio-box") do %>
                         <!-- <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
                         <%= image_tag("melian7.jpg", class: "img-responsive") %>
                         <div class="portfolio-box-caption">
@@ -123,7 +127,8 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    <% end %>
+                    <!-- </a> -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
