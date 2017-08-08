@@ -15,14 +15,21 @@
 //= require jquery.easing
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require creative
 //= require_tree .
 
 $(document).on('turbolinks:load', function() {
 // Offset for Main Navigation
 $('#mainNav').affix({
     offset: {
-        top: 100
+        top: 50
     }
 });
 
+});
+
+$(document).on('turbolinks:load', function() {
+$("#button-transform").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
 });

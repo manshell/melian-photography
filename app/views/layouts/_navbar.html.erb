@@ -54,14 +54,20 @@
                     <li>
                         <a class="page-scroll" href="#page-top">Top</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li> -->
+                    <li>
+                        <%= link_to 'Portfolio', portfolio_path %>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
                         <%= link_to 'New Post', new_post_path %>
+                    </li>
+                    <li>
+                        <%= link_to 'Manage Portfolio', manage_path %>
                     </li>
                 </ul>
             </div>
@@ -73,7 +79,11 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
+                <% if current_page?(portfolio_path) %>
+                    <h1 style="margin-top: 10px;">Portfolio</h1>
+                <% end %>
                 <h2 style="padding: 5px; margin-top: 10px;">Live &centerdot; Love &centerdot; Capture Every Moment!</h2>
+                
                 <!-- <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Go to Portfolio</a> -->
             </div>
         </div>

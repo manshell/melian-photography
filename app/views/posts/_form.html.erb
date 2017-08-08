@@ -12,22 +12,20 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
     <%= form.text_field :name, id: :post_name %>
   </div>
-
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
     <%= form.text_area :description, id: :post_description %>
   </div>
-
-  <div class="field">
+  <div class="form-group">
     <%= form.label :category_id %>
     <%= form.number_field :category_id, id: :post_category_id %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :image %>
     <%= form.file_field :image, id: :post_name %>
   </div>
@@ -36,3 +34,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+

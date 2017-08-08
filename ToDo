@@ -7,22 +7,32 @@
 -Create Devise for users db = follow ecommerce tutorial
 -CanCanCan for admin
 
-make home photos clickable to go to category, instagram, portfolio etc.
-  *** Will do the icons for now.
 
 -I will have to create later a separate page for portfolio and about for now.
   *** The portfolio is created, working on it. Need to create other pages.
 
 -Need to change NEW POST link to be able only with admin rights(DEVISE)
+-I am thinking to do a dropdown for, new post, edit, show, manage, etc
 
--Need to finish the front portfolio to go to portfolio_path(index of posts)
+-Will need another dropdown for the categories
+
+-Need to finish the front portfolio to go to portfolio_path(index of posts) || to categories, diferent categories. eg: an image of landscape, when clicked it will get you to landscape category.
+
+-Create ajax animation for new post and for contact.
+
+***DONE*** = Create JavaScript to make image bigger in the show.html.erb
 
 
-update, 8/6/2017, 10:44 = 	-Updated the table to upload photos with paperclip. 
-							-Worked with the portfolioo page to display the uploaded images on it.
+update, 8/6/2017, 10:44 PM = 	-Updated the table to upload photos with paperclip. 
+								-Worked with the portfolioo page to display the uploaded images on it.
 
-update, 8/7/2017, 10:08 = 	-Set navbar with aside for non home page path. 
-							-Did a link in navbar for new post. 
-							-When you click images in the portfolio page it will get you to the show_path of that image, from there you will be able to edit.
-							-Maked the third image in the portfolio of front page to go to portfolio_path(index of posts)
-							-_navbar have an if to separate the home navbar of the other pages navbar. 
+update, 8/7/2017, 10:08 PM = 	-Set navbar with aside for non home page path. 
+								-Did a link in navbar for new post. 
+								-When you click images in the portfolio page it will get you to the show_path of that image, from there you will be able to edit.
+								-Maked the third image in the portfolio of front page to go to portfolio_path(index of posts)
+								-_navbar have an if to separate the home navbar of the other pages navbar. 
+
+update, 8/8/2017, 4:54 PM = 	-created a new page for portfolio and did the route for portfolio and now posts/index is the manage portfolio
+								- in manage portfolio you can delete, edit and show the posts(portfolio, images)
+								-did javascript to transform the image in show.html.erb to 1000px when clicked, had to repeat a code because it was conflicting with the code of portfolio. A max-width was not letting me execute the javascript, so I copy the same code to posts.scss together with the transform css and did not set a max width.
+								-updated aside "header"(is not a header), to show Portfolio when the route = portfolio_path. It is the aside in the _navbar
