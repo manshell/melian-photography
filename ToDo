@@ -36,3 +36,8 @@ update, 8/8/2017, 4:54 PM = 	-created a new page for portfolio and did the route
 								- in manage portfolio you can delete, edit and show the posts(portfolio, images)
 								-did javascript to transform the image in show.html.erb to 1000px when clicked, had to repeat a code because it was conflicting with the code of portfolio. A max-width was not letting me execute the javascript, so I copy the same code to posts.scss together with the transform css and did not set a max width.
 								-updated aside "header"(is not a header), to show Portfolio when the route = portfolio_path. It is the aside in the _navbar
+
+update, 8/9/2017, 10:30 AM = 	-changed some things in the front end. Fonts, colors, etc.
+								-Added @categories = Category.all in posts controller, in new and edit
+								-Created category dropdown for NewPost and Edit forms and added the category.name in the show.html.erb instead of category_id in posts sub-folder in views folder
+								-Also added the category.name in index.html.erb of posts sub-folder in views folder.
