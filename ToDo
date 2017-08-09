@@ -41,3 +41,11 @@ update, 8/9/2017, 10:30 AM = 	-changed some things in the front end. Fonts, colo
 								-Added @categories = Category.all in posts controller, in new and edit
 								-Created category dropdown for NewPost and Edit forms and added the category.name in the show.html.erb instead of category_id in posts sub-folder in views folder
 								-Also added the category.name in index.html.erb of posts sub-folder in views folder.
+
+update, 8/9/2017, 11:18 AM =	-Created portfolio_by_category page under home sub-folder.
+								-Added the method for portfolio_by_category in home_controller
+								-Added the route for portfolio_by_category
+								-Added dropdown link in navbar for Categories
+								-Added before_action and @categories - Category.all in application controller to have access to it all over the application.
+								-Added code in portfolio_by_category controller to pull the posts from that category.
+								-Added code in portfolio_by_category.html.erb. It is the same code as portfolio.html.erb. I am using the same instance variable. @posts

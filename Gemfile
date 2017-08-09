@@ -13,7 +13,6 @@ gem 'jquery-easing-rails'
 gem 'hirb'
 gem 'better_errors'
 gem 'devise'
-gem 'carrierwave'
 
 gem "paperclip", "~> 4.2"
 
