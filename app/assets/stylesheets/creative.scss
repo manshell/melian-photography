@@ -25,6 +25,7 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #F895E7;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -37,6 +38,11 @@ h1 {
 
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 600; 
 }
 
 h1,

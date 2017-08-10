@@ -57,3 +57,6 @@ update, 8/10/2017, 8:18 AM = 	-Remove the edit button in show.
 									-Had to midify the header to be able to do it. 
 									-Added CSS in the home.scss for the header slide show.
 									-Imported home.scss in the applcation.scss
+
+update, 8/10/2017, 9:08 AM = 	-Added instagram icon in services.
+								-Added telephone and email link in the contact. Phone will link you to make a call and email will link you to sen an email.
