@@ -22,6 +22,8 @@
 
 ***DONE*** = Create JavaScript to make image bigger in the show.html.erb
 
+-Need to change Edit button in the show page.
+
 
 update, 8/6/2017, 10:44 PM = 	-Updated the table to upload photos with paperclip. 
 								-Worked with the portfolioo page to display the uploaded images on it.
@@ -49,3 +51,9 @@ update, 8/9/2017, 11:18 AM =	-Created portfolio_by_category page under home sub-
 								-Added before_action and @categories - Category.all in application controller to have access to it all over the application.
 								-Added code in portfolio_by_category controller to pull the posts from that category.
 								-Added code in portfolio_by_category.html.erb. It is the same code as portfolio.html.erb. I am using the same instance variable. @posts
+
+update, 8/10/2017, 8:18 AM = 	-Remove the edit button in show. 
+								-Added a slide show in the header.
+									-Had to midify the header to be able to do it. 
+									-Added CSS in the home.scss for the header slide show.
+									-Imported home.scss in the applcation.scss
