@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require jquery
 //= require jquery.easing
+//= require turbolinks
 //= require bootstrap-sprockets
 //= require creative
 //= require_tree .
@@ -33,6 +33,13 @@ $("#button-transform").click(function() {
   $('.transform').toggleClass('transform-active');
 });
 });
+
+window.setTimeout(function() {
+	$("#flash").fadeTo(2500, 0).slideUp(1750, function() 
+	{
+		$(this).remove();
+	});
+}, 3000);
 
  
 

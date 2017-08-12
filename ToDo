@@ -1,10 +1,10 @@
 **DONE** = create scaffold for photos with title:string and description:text
-  **DONE** = test if the post are working
+**DONE** = test if the post are working
 **DONE** = create scaffold for category with name:string
 **DONE** = create a category, mountain, beach, flowers, etc.
 **DONE** = install and do the paperclip. AddImageToPhotos image:string, or upload with paperclip? will have to check.
 
--Create Devise for users db = follow ecommerce tutorial
+**DONE** = Create Devise for users db = follow ecommerce tutorial
 -CanCanCan for admin
 
 
@@ -60,3 +60,10 @@ update, 8/10/2017, 8:18 AM = 	-Remove the edit button in show.
 
 update, 8/10/2017, 9:08 AM = 	-Added instagram icon in services.
 								-Added telephone and email link in the contact. Phone will link you to make a call and email will link you to sen an email.
+
+update, 8/12/2017, 2:20 AM =	-Installed Devise for user authentication
+								-Added 'cancancan' gem
+								-Added role to User table
+								-Installed cancancan and added method in application controller to add role to devise sanitizers
+								-Added authorize_resource in categories controller and Post controller
+								-Added role methods in user model.
