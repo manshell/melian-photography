@@ -24,9 +24,9 @@
           <%= image_tag post.image.url(:thumb) %>
         </td>
         <td><%= post.category.name %></td>
-        <td><%= link_to 'Show', post, class: "btn btn-primary" %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-success" %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        <td><%= link_to 'Show', post, class: "btn btn-primary btn-xl" %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-primary  btn-xl" %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xl" %></td>
       </tr>
     <% end %>
   </tbody>

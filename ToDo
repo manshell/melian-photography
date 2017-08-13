@@ -67,3 +67,8 @@ update, 8/12/2017, 2:20 AM =	-Installed Devise for user authentication
 								-Installed cancancan and added method in application controller to add role to devise sanitizers
 								-Added authorize_resource in categories controller and Post controller
 								-Added role methods in user model.
+
+update, 8/13/2017, 12:26 AM =	-Modified the navbar.
+								-If user is not authorized redirect to portfolio page.
+								-Added before_action :authenticate_user! to posts controller
+								-Fixed things here and there. 
