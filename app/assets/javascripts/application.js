@@ -26,13 +26,9 @@ $('#mainNav').affix({
     }
 });
 
-});
-
-$(document).on('turbolinks:load', function() {
 $("#button-transform").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
-});
+	  $('.transform').toggleClass('transform-active');
+	});
 
 window.setTimeout(function() {
 	$("#flash").fadeTo(2500, 0).slideUp(1750, function() 
@@ -40,6 +36,11 @@ window.setTimeout(function() {
 		$(this).remove();
 	});
 }, 3000);
+
+});
+
+
+
 
 
 // // Initialize and Configure Magnific Popup Lightbox Plugin
