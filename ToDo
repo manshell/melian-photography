@@ -16,15 +16,17 @@
 
 **DONE** = Will need another dropdown for the categories
 
--Need to finish the front portfolio to go to portfolio_path(index of posts) || to categories, diferent categories. eg: an image of landscape, when clicked it will get you to landscape category.
-
 -Create ajax animation for new post and for contact.
 
 **DONE** = Create JavaScript to make image bigger in the show.html.erb
 
--Need to change Edit button in the show page.
+**DONE** = Need to change Edit button in the show page.
 
 -Create ajax to intensify image in portfolio instead of going to show.
+
+-Better the admin page, better login
+
+-Add user name, uasername, email, etc to User table
 
 
 update, 8/6/2017, 10:44 PM = 	-Updated the table to upload photos with paperclip. 
