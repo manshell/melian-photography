@@ -13,28 +13,48 @@
 //= require jquery
 //= require rails-ujs
 //= require jquery.easing
-//= require turbolinks
 //= require bootstrap-sprockets
+//= require turbolinks
 //= require creative
 //= require_tree .
 
-$(document).on('turbolinks:load', function() {
+// $(document).on('turbolinks:load', function() {
+// // Offset for Main Navigation
+// $('#mainNav').affix({
+//     offset: {
+//         top: 50
+//     }
+// });
+
+// });
+
+// $(document).on('turbolinks:load', function() {
+// $("#button-transform").click(function() {
+//   $('.transform').toggleClass('transform-active');
+// });
+// });
+
+// window.setTimeout(function() {
+// 	$("#flash").fadeTo(2500, 0).slideUp(1750, function() 
+// 	{
+// 		$(this).remove();
+// 	});
+// }, 3000);
+
+//Navbar background will turn white
+$(document).ready(function() {
 // Offset for Main Navigation
 $('#mainNav').affix({
     offset: {
         top: 50
     }
 });
+});
 
+
+//On click image will get bigger.
+$(document).on('turbolinks:load', function() {
 $("#button-transform").click(function() {
-	  $('.transform').toggleClass('transform-active');
-	});
-
-window.setTimeout(function() {
-	$("#flash").fadeTo(2500, 0).slideUp(1750, function() 
-	{
-		$(this).remove();
-	});
-}, 3000);
-
+  $('.transform').toggleClass('transform-active');
+});
 });
