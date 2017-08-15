@@ -78,8 +78,10 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 
+                    <% if current_path(admin) %>
+
                     <!-- Manage Dropdowsn -->
-                    <% if current_user %>
+                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -94,34 +96,36 @@
                                 </li>
                             </ul>
                     </li>
-                    <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <% if current_user %>
-                                        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-                                    
-                                    <% end %>
-                                </ul>
-                        </li>
-                    <% end %>
+                    
                     <!-- End of Manage Dropdown -->
 
-                    <% if current_page?(admin_url) %>
-                        <!-- My Account Dropdowsn -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <% if current_user %>
-                                        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-                                    <% else %>
-                                        <li><%= link_to "Sign Up", new_user_registration_path %></li>
-                                        <li><%= link_to "Login", new_user_session_path %></li>
-                                    <% end %>
-                                </ul>
-                        </li>
-                        <!-- End of My Account Dropdown -->
-                    <% end %>
-                    
+                    <!-- My Account Dropdowsn -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <% if current_user %>
+                                    <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+                                <% else %>
+                                    <li><%= link_to "Sign Up", new_user_registration_path %></li>
+                                    <li><%= link_to "Login", new_user_session_path %></li>
+                                <% end %>
+                            </ul>
+                    </li>
+                    <!-- End of My Account Dropdown -->
+
+
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <% if current_user %>
+                                <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+                            <% else %>
+                                <li><%= link_to "Sign Up", new_user_registration_path %></li>
+                                <li><%= link_to "Login", new_user_session_path %></li>
+                            <% end %>
+                        </ul>
+                </li>
+                <% end %>
 
                 </ul>
             </div>

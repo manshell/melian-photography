@@ -52,7 +52,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <!-- <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <a href="">
                             <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
@@ -78,8 +78,8 @@
                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                </div> -->
+                <div class="col-lg-12 col-md-6 text-center">
                     <div class="service-box">
                         <a href="https://www.instagram.com/melian.photography/" target="_blank">
                             <i class="fa fa-4x fa-instagram text-primary sr-icons"></i>
@@ -96,9 +96,10 @@
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <!-- <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt=""> -->
-                        <%= image_tag("melian6.jpg", class: "img-responsive") %>
+                    <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
+                    <%= link_to(portfolio_path, class: "portfolio-box") do %>
+                        <!-- <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
+                        <%= image_tag("melian1.jpg", class: "img-responsive") %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -109,12 +110,14 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    <% end %>
+                    <!-- </a> -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <!-- <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt=""> -->
-                        <%= image_tag("melian-img2.jpg", class: "img-responsive") %>
+                    <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
+                    <%= link_to(portfolio_path, class: "portfolio-box") do %>
+                        <!-- <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
+                        <%= image_tag("melian2.jpg", class: "img-responsive") %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -125,7 +128,8 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    <% end %>
+                    <!-- </a> -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
@@ -146,8 +150,9 @@
                     <!-- </a> -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <!-- <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt=""> -->
+                    <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
+                    <%= link_to(portfolio_path, class: "portfolio-box") do %>
+                        <!-- <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
                         <%= image_tag("melian4.jpg", class: "img-responsive") %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -159,11 +164,13 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    <% end %>
+                    <!-- </a> -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <!-- <img src="../../assets/images/portfolio/thumbnails/5.jpg"1 class="img-responsive" alt=""> -->
+                    <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
+                    <%= link_to(portfolio_path, class: "portfolio-box") do %>
+                        <!-- <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
                         <%= image_tag("melian5.jpg", class: "img-responsive") %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -175,12 +182,14 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    <% end %>
+                    <!-- </a> -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <!-- <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt=""> -->
-                        <%= image_tag("melian1.jpg", class: "img-responsive") %>
+                    <!-- <a href="img/portfolio/fullsize/melian7.jpg" class="portfolio-box"> -->
+                    <%= link_to(portfolio_path, class: "portfolio-box") do %>
+                        <!-- <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
+                        <%= image_tag("melian6.jpg", class: "img-responsive") %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -191,7 +200,8 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    <% end %>
+                    <!-- </a> -->
                 </div>
             </div>
         </div>
