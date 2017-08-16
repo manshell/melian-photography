@@ -2,7 +2,7 @@
     "use strict"; // Start of use strict
 
     //Navbar background will turn white
-$(document).on('turbolinks:load', function() {
+$(function() {
 // Offset for Main Navigation
 $('#mainNav').affix({
     offset: {
