@@ -18,29 +18,6 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 
-// $(document).on('turbolinks:load', function() {
-// // Offset for Main Navigation
-// $('#mainNav').affix({
-//     offset: {
-//         top: 50
-//     }
-// });
-
-// });
-
-// $(document).on('turbolinks:load', function() {
-// $("#button-transform").click(function() {
-//   $('.transform').toggleClass('transform-active');
-// });
-// });
-
-// window.setTimeout(function() {
-// 	$("#flash").fadeTo(2500, 0).slideUp(1750, function() 
-// 	{
-// 		$(this).remove();
-// 	});
-// }, 3000);
-
 //Navbar background will turn white
 $(document).on('turbolinks:load', function() {
 // Offset for Main Navigation
