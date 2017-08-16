@@ -9,7 +9,6 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'jquery-easing-rails'
-gem 'jquery-turbolinks'
 
 gem 'hirb'
 gem 'better_errors'
@@ -55,7 +54,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -70,6 +69,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'jquery-turbolinks'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
