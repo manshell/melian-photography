@@ -11,11 +11,12 @@
 // about supported directives.
 //
 //= require jquery
-//= require rails-ujs
 //= require jquery.turbolinks
+//= require rails-ujs
 //= require_tree .
 //= require jquery.easing
 //= require bootstrap-sprockets
+//= require turbolinks
 
 // $(document).on('turbolinks:load', function() {
 // // Offset for Main Navigation
