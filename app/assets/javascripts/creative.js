@@ -11,10 +11,19 @@
     });
 
     // Highlight the top nav as scrolling occurs
+
+    $('#mainNav').affix({
+    offset: {
+        top: 50
+    }
+
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
     });
+
+    $('.transform').toggleClass('transform-active');
+});
 
     $(function() {
       $('a.page-scroll').bind('click', function(event) {
@@ -26,12 +35,14 @@
     });
   });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
 
 // Not Using*****************
+
+    // // Closes the Responsive Menu on Menu Item Click
+    // $('.navbar-collapse ul li a').click(function() {
+    //     $('.navbar-toggle:visible').click();
+    // });
+
     // Initialize and Configure Scroll Reveal Animation
     // window.sr = ScrollReveal();
     // sr.reveal('.sr-icons', {

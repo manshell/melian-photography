@@ -11,12 +11,14 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require rails-ujs
 //= require turbolinks
+//= require_tree .
 //= require jquery.easing
 //= require creative
-//= require_tree .
+//= require bootstrap-sprockets
+//= require creative.js
+
 
 // $(document).on('turbolinks:load', function() {
 // // Offset for Main Navigation
@@ -42,19 +44,19 @@
 // }, 3000);
 
 //Navbar background will turn white
-$(document).ready(function() {
-// Offset for Main Navigation
-$('#mainNav').affix({
-    offset: {
-        top: 50
-    }
-});
-});
+// $(document).on('turbolinks:load', function() {
+// // Offset for Main Navigation
+// $('#mainNav').affix({
+//     offset: {
+//         top: 50
+//     }
+// });
 
 
-//On click image will get bigger.
-$(document).on('turbolinks:load', function() {
-$("#button-transform").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
-});
+
+// //On click image will get bigger.
+
+// $("#button-transform").click(function() {
+//   $('.transform').toggleClass('transform-active');
+// });
+// });
