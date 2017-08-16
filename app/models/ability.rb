@@ -29,13 +29,20 @@ class Ability
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
 
-    
-    if user.admin?
-        can :manage, Post
-        can :manage, Category
-    elsif user.guest?
-        can :show, Post
-    end
+    user ||= User.new # guest user (not logged in)
+      if user.admin?
+        can :manage, :all
+      else
+        can :read, :all
+      end
+
+
+    # if user.admin?
+    #     can :manage, Post
+    #     can :manage, Category
+    # elsif user.guest?
+    #     can :show, Post
+    # end
     
   end
 end

@@ -16,27 +16,6 @@
     //     offset: 51
     // });
 
-    $(document).on('turbolinks:load', function() {
-// Offset for Main Navigation
-$('#mainNav').affix({
-    offset: {
-        top: 50
-    }
-});
-
-$('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
-
-
-//On click image will get bigger.
-
-$("#button-transform").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
-});
-
     $(function() {
       $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);

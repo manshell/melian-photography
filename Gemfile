@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'jquery-easing-rails'
+gem 'jquery-turbolinks'
 
 gem 'hirb'
 gem 'better_errors'
