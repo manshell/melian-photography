@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'jquery-easing-rails'
+gem 'jquery-turbolinks'
 
 gem 'hirb'
 gem 'better_errors'
@@ -69,7 +70,6 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'jquery-turbolinks'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
