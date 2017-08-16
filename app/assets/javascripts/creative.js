@@ -11,19 +11,10 @@
     });
 
     // Highlight the top nav as scrolling occurs
-
-    $('#mainNav').affix({
-    offset: {
-        top: 50
-    }
-
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
-
-    $('.transform').toggleClass('transform-active');
-});
+    // $('body').scrollspy({
+    //     target: '.navbar-fixed-top',
+    //     offset: 51
+    // });
 
     $(function() {
       $('a.page-scroll').bind('click', function(event) {
