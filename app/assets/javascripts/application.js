@@ -13,10 +13,10 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require rails-ujs
-//= require_tree .
 //= require jquery.easing
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require_tree .
 
 //Navbar background will turn white
 $(document).on('turbolinks:load', function() {
