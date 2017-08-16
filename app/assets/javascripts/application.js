@@ -17,8 +17,6 @@
 //= require jquery.easing
 //= require creative
 //= require bootstrap-sprockets
-//= require creative.js
-
 
 // $(document).on('turbolinks:load', function() {
 // // Offset for Main Navigation
@@ -44,23 +42,23 @@
 // }, 3000);
 
 //Navbar background will turn white
-$(document).on('turbolinks:load', function() {
-// Offset for Main Navigation
-$('#mainNav').affix({
-    offset: {
-        top: 50
-    }
-});
+// $(document).on('turbolinks:load', function() {
+// // Offset for Main Navigation
+// $('#mainNav').affix({
+//     offset: {
+//         top: 50
+//     }
+// });
 
-$('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
+// $('body').scrollspy({
+//         target: '.navbar-fixed-top',
+//         offset: 51
+//     });
 
 
-//On click image will get bigger.
+// //On click image will get bigger.
 
-$("#button-transform").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
-});
+// $("#button-transform").click(function() {
+//   $('.transform').toggleClass('transform-active');
+// });
+// });
