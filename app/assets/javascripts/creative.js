@@ -1,8 +1,8 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    //Navbar background will turn white
-$(document).on('turbolinks:load', function() {
+//Navbar background will turn white
+$(document).ready(function() {
 // Offset for Main Navigation
 // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
@@ -23,12 +23,11 @@ $(document).on('turbolinks:load', function() {
     })
 });
 
-$(document).on('turbolinks:load', function() {
 //On click image will get bigger.
-
-$("#button-transform").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
+$(function() {
+    $("#button-transform").click(function() {
+      $('.transform').toggleClass('transform-active');
+    });
 });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
