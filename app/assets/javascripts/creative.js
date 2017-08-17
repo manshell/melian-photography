@@ -2,7 +2,7 @@
     "use strict"; // Start of use strict
 
 //Navbar background will turn white
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
 // Offset for Main Navigation
 // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
@@ -24,7 +24,7 @@ $(document).ready(function() {
 });
 
 //On click image will get bigger.
-$(function() {
+$(document).on('turbolinks:load', function() {
     $("#button-transform").click(function() {
       $('.transform').toggleClass('transform-active');
     });
