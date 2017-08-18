@@ -83,4 +83,8 @@ update, 8/15/2017, 	11:13 AM = 	-Added admin page and route for it. Admin will h
 								-Modified email icon in contact.
 								-Remove icons that were in services, just left the one for instagram. I commented them.
 
-								TEST
+update, 8/17/2017, 	11:01 PM = 	-Spend the last 2 days looking for a solution to run JQuery on Heroku
+								-Added before_action :authenticate_user!, except: [:show], so any user will be able to view the show page.
+								-Added back the #flash message, removed it by mistake.
+
+								
