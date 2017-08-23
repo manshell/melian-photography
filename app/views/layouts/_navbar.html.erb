@@ -25,6 +25,10 @@
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                <% if current_user %>
+                    <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+                                    
+                <% end %>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

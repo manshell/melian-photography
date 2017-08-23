@@ -87,4 +87,14 @@ update, 8/17/2017, 	11:01 PM = 	-Spend the last 2 days looking for a solution to
 								-Added before_action :authenticate_user!, except: [:show], so any user will be able to view the show page.
 								-Added back the #flash message, removed it by mistake.
 
+update, 8/22/2017, 	12:44 AM = 	-User wanted to be redirected to a new post page whenever she upload a new post.
+								-Did route for session new.
+								-Gave some style to the login page. 
+								-Added singout to navbar in front page if user is log in.
+								-Style new post, edit post, show category, edit category, new category
+								-Did a margin 0 auot to center it and gave it a dark opaque background color
+								-Deleted admin page in views/home folder
+								-Set the max width for posts/show to a 100%. The JS works on big screen but not in mobile screens.
+
+
 								
