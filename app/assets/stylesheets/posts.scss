@@ -61,10 +61,10 @@
 }
 
 .transform {
-  -webkit-transition: all 2s ease;  
-  -moz-transition: all 2s ease;  
-  -o-transition: all 2s ease;  
-  -ms-transition: all 2s ease;  
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
   transition: all 2s ease;
 }
 
@@ -76,10 +76,15 @@
 
 /*Centering the choose file input from new post*/
 .choose-img {
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: rgba(34, 34, 34, 0.3);
 }
 
 .show-img {
   max-width: 100%;
+}
+
+.img-max-min {
+  min-height: 405px;
+  max-height: 407px;
 }
